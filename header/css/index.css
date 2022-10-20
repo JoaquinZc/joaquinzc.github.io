@@ -1,0 +1,124 @@
+:root {
+    --size-header: 10em;
+}
+
+.header {
+    background-color: var(--clr-white);
+    width: 100%;
+    height: var(--size-header);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.2em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid var(--clr-black-h);
+
+    gap: 1em;
+
+    position: absolute;
+    top: 0;
+}
+
+.short-header {
+    flex-direction: row;
+    padding-bottom: 1.2em;
+    justify-content: center;
+    height: auto;
+}
+
+.fixer--header {
+    height: calc(var(--size-header));
+}
+
+.short-header .logo--header {
+    width: 13em;
+}
+
+.logo--header {
+    display: flex;
+    justify-content: center;
+}
+
+.short-header .logo--header img {
+    width: 100%;
+}
+
+.logo--header img {
+    width: 27%;
+}
+
+.short-header .menu--header {
+    width: auto;
+}
+
+.menu--header {
+    width: 100%;
+}
+
+.menu {
+    width: max(400px, 60%);
+    list-style: none;
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu > li {
+    flex: 1 1 auto;
+    padding-bottom: 0.25em;
+    border-bottom: 2px solid transparent;
+    transition: .3s ease-out;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5em;
+}
+
+.menu > li div {
+    width: 1em;
+    height: 1em;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#home--menu div {
+  background-image: url(../images/home.svg);
+}
+
+#organization--menu div {
+  background-image: url(../images/organization.html.svg);
+}
+
+#product--menu div {
+  background-image: url(../images/product.html.svg);
+}
+
+#contact--menu div {
+  background-image: url(../images/contact.html.svg);
+}
+
+.menu > li:hover {
+    border-bottom-color: var(--clr-primary);
+}
+
+.menu > li.active {
+    border-bottom-color: var(--clr-primary);
+    border-bottom-width: 4px;
+    font-weight: 900;
+}
+
+.menu > li p {
+    color: var(--clr-black-l);
+    text-align: center;
+}
+
+.menu > li a {
+    color: inherit;
+}

@@ -1,0 +1,53 @@
+
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: var(--clr-black-footer);
+
+    padding: 2.5em;
+}
+
+.footer > * {
+    flex: 1 1 50%;
+}
+
+.logobig img {
+    width: 20em;
+    filter: invert(100%);
+}
+
+.logobig p {
+    margin-top: 1em;
+    font-size: 0.85em;
+    color: white;
+}
+
+.social {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.item--social {
+    width: 3em;
+    height: 3em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.twitter--social {
+    background-image: url(../images/twitter.svg);
+    filter: invert(100%);
+}
+
+.facebook--social {
+    background-image: url(../images/facebook.svg);
+    filter: invert(100%);
+}
+
+.linkedin--social {
+    background-image: url(../images/linkedin.svg);
+    filter: invert(100%);
+}
