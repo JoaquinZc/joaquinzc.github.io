@@ -19,6 +19,8 @@
 
     position: absolute;
     top: 0;
+
+    z-index: 2;
 }
 
 .short-header {
@@ -93,15 +95,15 @@
 }
 
 #organization--menu div {
-  background-image: url(../images/organization.html.svg);
+  background-image: url(../images/organization.svg);
 }
 
 #product--menu div {
-  background-image: url(../images/product.html.svg);
+  background-image: url(../images/product.svg);
 }
 
 #contact--menu div {
-  background-image: url(../images/contact.html.svg);
+  background-image: url(../images/contact.svg);
 }
 
 .menu > li:hover {
