@@ -1,0 +1,157 @@
+.description--home {
+    height: calc(100vh - var(--size-header));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 5em;
+}
+
+.description--home > div {
+    width: 35%;
+    color: white;
+}
+
+.description--home > div > * {
+    -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.6));
+}
+
+.description--home h2 {
+    font-size: 2em;
+}
+
+.description--home p {
+    font-size: 1.1em;
+}
+
+.description--home > div > * + * {
+    margin-top: 1em;
+}
+
+.cards--home {
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: dense;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.card--home {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.card--home .icon--card {
+    padding-bottom: 50%;
+    position: relative;
+    background-color: var(--clr-primary-2);
+}
+
+.card--home .icon--card .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 20%;
+    width: 20%;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    filter: invert(100%);
+}
+
+.card--home .content--card {
+    padding: 1em;
+    line-height: 1.5;
+}
+
+.card--home .content--card h3 {
+    color: var(--clr-primary-2);
+}
+
+.values--home {
+    padding: 2em 4em 5em 4em;
+}
+
+.title--values {
+    padding: 2em 3em 5em 3em;
+}
+
+.title--values h2 {
+    padding-bottom: 0.5em;
+}
+
+/** === VALORES CAMBIO === */
+
+#value1--home .icon { background-image: url(../images/card1.svg) }
+#value2--home .icon { background-image: url(../images/card2.svg) }
+#value3--home .icon { background-image: url(../images/card3.svg) }
+#value4--home .icon { background-image: url(../images/card4.svg) }
+#value5--home .icon { background-image: url(../images/card5.svg) }
+#value6--home .icon { background-image: url(../images/card6.svg) }
+#value7--home .icon { background-image: url(../images/card7.svg) }
+
+.product--home {
+    height: calc(100vh - var(--size-header) / 2);
+    overflow: hidden;
+    display: flex;
+    /* background-color: var(--clr-grey-1); */
+    background-color: var(--clr-primary-2);
+    color: white;
+    padding: 4em;
+
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    text-align: center;
+    line-height: 1.5;
+}
+
+.title--product h2 {
+    font-size: 3em;
+}
+
+.title--product p {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.title--product a {
+    color: white;
+    text-decoration: underline;
+    margin: 0 auto;
+}
+
+.image--product.image-top--product {
+    bottom: initial;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+.image--product {
+    position: absolute;
+    width: 100%;
+    height: 127px;
+    background-image: url(../images/products.png);
+    bottom: 0;
+    left: 0;
+
+    animation: productanimation 4s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes productanimation {
+    from { background-position-x: 0px; }
+    to { background-position-x: 810px; }
+}

@@ -25,6 +25,7 @@
 }
 
 :root {
+    --clr-primary-2: #fe001a;
     --clr-primary: #dc3545;
     --clr-black-l: #333333;
     --clr-grey-1: hsl(0, 0%, 90%);
@@ -105,4 +106,27 @@ h1 p {
     /* top: 55px;
     left: -30px; */
     transform: translateX(-200%);
+}
+
+a.more {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    width: max-content;
+}
+
+a.more:hover::after {
+    transform: translateX(50%);
+}
+
+a.more::after {
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-image: url(../images/more.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: .75s ease-in-out;
 }
