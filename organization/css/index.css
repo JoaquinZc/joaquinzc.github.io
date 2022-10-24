@@ -1,0 +1,63 @@
+
+.title--organization {
+    background-image: url(../images/company.jpg);
+}
+
+.description--organization {
+    padding: 3em 10em;
+    padding-right: 5em;
+}
+
+.description--organization > div {
+    display: flex;
+}
+
+.description--organization p {
+    padding: 3em;
+}
+
+.description--organization img {
+    width: 50vw;
+}
+
+.grid--organization .grid-image--organization {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-position: center center;
+    background-size: cover;
+    min-height: 25em;
+}
+
+.grid--organization div {
+    padding: 5em;
+}
+
+/* .grid--organization img {
+    height: 100%;
+} */
+
+.grid--organization h2 {
+    margin-bottom: 1em;
+}
+
+.grid--organization ul {
+    margin-top: 0.5em;
+    padding-left: 2em;
+}
+
+.grid--organization ul li::marker {
+    color: var(--clr-primary);
+}
+
+.grid--organization p {
+    padding-bottom: 0.75em;
+}
+
+/* .grid--organization > div:nth-child(4n+2), .grid--organization > div:nth-child(4n+3) {
+    background-color: var(--clr-grey-1);
+} */
+
+/* .grid--organization > div:nth-child(odd) {
+    background-color: var(--clr-grey-1);
+} */

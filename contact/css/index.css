@@ -1,0 +1,105 @@
+.title--contact {
+    background-image: url(../images/banner.jpg);
+}
+
+.section {
+    padding: 3em 0;
+}
+
+.section ul {
+    padding-left: 3em;
+}
+
+.section a {
+    text-decoration: underline;
+    transition: 0.2s ease-in-out;
+}
+
+.section a:hover {
+    text-decoration-color: var(--clr-primary);
+}
+
+form > div {
+    position: relative;
+}
+
+form > div > input, form > div > textarea {
+    /* border: none; */
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+form > div > p {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+form .error {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+form .error .error--image {
+    width: 1.2em;
+    height: 1.2em;
+
+    background-image: url(../images/error.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form .error .error--tooltip {
+    display: none;
+    font-size: 0.7em;
+    position: absolute;
+    left: 2em;
+    transform: translateY(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: .25em;
+    padding: .5em;
+    border: 1px solid black;
+}
+
+.error--image:hover ~ .error--tooltip {
+    display: block;
+}
+
+form textarea {
+    height: 10em;
+    resize: none;
+}
+
+form button {
+    margin-top: 1em;
+    width: 100%;
+    padding: 0.5em;
+    background-color: var(--clr-primary);
+    color: white;
+    font-weight: bold;
+    font-family: "TCCC-UnityHeadline-Regular", sans-serif;
+    border-radius: 0.25em;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+form > div:has(> .error) {
+    color: rgb(200, 10, 0);
+}
+
+.error-success {
+    padding: 0.9em;
+    text-align: center;
+    background-color: #c7ddb5;
+    border: 1px solid #75975e;
+    border-radius: 0.5em;
+    font-size: 0.7em;
+}
+
+.container--contact {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}

@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="./header/css/index.css" />
     <link rel="stylesheet" href="./footer/css/index.css" />
 
-    <link rel="stylesheet" href="./home/css/index.css" />
+    <link rel="stylesheet" href="./contact/css/index.css" />
 
     <script type="module" src="./header/js/index.js"></script>
+    <script type="module" src="./contact/js/index.js"></script>
   </head>
   <body>
     <header class="header">
@@ -27,25 +28,68 @@
     </header>
     <div class="fixer--header"></div>
 
-    <section class="title title--home">
-      <h1>NOSOTROS SOMOS COCA-COLA COMPANY</h1>
+    <section class="title title--contact">
+      <h1>CONTACTANOS EN ECUADOR</h1>
     </section>
 
-    <p>Hola</p>
-    <p>Hola</p>
-    <p>Hola</p>
-    <p>Hola</p>
-    <p>Hola</p>
-    <p>Hola</p>
-    <p>Hola</p>
-    <p>Hola</p>
-    <p>Hola</p>
-    <p>Hola</p>
-    <p>Hola</p>
-    <p>Hola</p>
-    <p>Hola</p>
-    <p>Hola</p>
-    <p>Hola</p>
+    <section class="container--contact">
+      <h2 class="line separator">Correo electrónico</h2>
+      <div class="section separator">
+        <a href="mailto:contactococacolaecuador@coca-cola.c">contactococacolaecuador@coca-cola.com</a>
+      </div>
+  
+      <h2 class="line separator">Redes sociales</h2>
+      <div class="section separator">
+        <ul>
+          <li><a href="https://www.facebook.com/CocaColaJourney"  target="_blank">Facebook</a></li>
+          <li><a href="https://twitter.com/CocaColaLC"  target="_blank">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/company/the-coca-cola-company/"  target="_blank">Linkedin</a></li>
+        </ul>
+      </div>
+  
+      <h2 class="line separator">Contacto directo</h2>
+      <div class="section separator">
+        <form name="contact">
+          <div>
+            <p><label for="fname">Nombres</label></p>
+            <input name="fname" id="fname" type="text" />
+            <!--
+              <div class="error">
+                <i></i>
+                <div>
+                  <p>Message</p>
+                </div>
+              </div>
+            -->
+          </div>
+          
+          <div>
+            <p><label for="lname">Apellidos</label></p>
+            <input name="lname" id="lname" type="text" />
+          </div>
+          
+          <div>
+            <p><label for="phone">Teléfono</label></p>
+            <input name="phone" id="phone" type="number" />
+          </div>
+          
+          <div>
+            <p><label for="subject">Asunto</label></p>
+            <input name="subject" id="subject" type="text" />
+          </div>
+          
+          <div>
+            <p><label for="message">Mensaje</label></p>
+            <textarea name="message" id="message"></textarea>
+          </div>
+
+          <div>
+            <button type="submit" id="contact-send">Enviar</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="logobig">
