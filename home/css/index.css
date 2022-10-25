@@ -106,7 +106,7 @@
     overflow: hidden;
     display: flex;
     /* background-color: var(--clr-grey-1); */
-    background-color: var(--clr-primary-2);
+    background-color: var(--clr-primary);
     color: white;
     padding: 4em;
 
